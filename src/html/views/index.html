@@ -4,6 +4,118 @@
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
+<section class="special-offers">
+  <button class="special-offers__btn"></button>
+  <button class="special-offers__btn"></button>
+  <button class="special-offers__btn"></button>
+  <div class="special-offers__box">
+    <h1 class="special-offers__title"></h1>
+    <a class="special-offers__link" href="#">Давайту оба!</a>
+  </div>
 
+</section> <!--/special-offers-->
+
+<section class="promotions">
+  <div class="promotions__wrapper">
+
+    <div class="promotions__box">
+      <h2 class="promotions__title">Малинка даром!</h2>
+      <p class="promotions__text">При покупке 2 кг любого фруктового мороженог, добавим в ваш заказ
+        банку малинового варенья бесплатно.
+      </p>
+      <a class="promotions__link" href="#">Хочу варенье!</a>
+    </div>
+
+    <div class="promotions__box">
+      <h2 class="promotions__title">Шоколадки даром!</h2>
+      <p class="promotions__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
+         шоколадной присыпки совершенно бесплатно</p>
+      <a class="promotions__link" href="#">Хочу шоколадки!</a>
+    </div>
+
+  </div>
+</section>  <!--/promotions-->
+
+<section class="product-hit">
+
+  <div class="product-hit__box">
+    <p class="product-hit__price"> 310&#8381;<span class="product-hit__price-text">/кг</span></p>
+    <p class="product-hit__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+    <a class="product-hit__link" href="#">Быстрый просмотр</a>
+  </div> 
+
+  <div class="product-hit__box">
+    <p class="product-hit__price"> 380&#8381;<span class="product-hit__price-text">/кг</span></p>
+    <p class="product-hit__text">Сливочное-кофейное с кусочками шоколада</p>
+    <a class="product-hit__link" href="#">Быстрый просмотр</a>
+  </div>
+
+  <div class="product-hit__box">
+    <p class="product-hit__price"> 355&#8381;<span class="product-hit__price-text">/кг</span></p>
+    <p class="product-hit__text">Сливочно-клубничное с присыпкой из белого шоколада</p>
+    <a class="product-hit__link" href="#">Быстрый просмотр</a>
+  </div>
+
+  <div class="product-hit__box">
+    <p class="product-hit__price"> 415&#8381;<span class="product-hit__price-text">/кг</span></p>
+    <p class="product-hit__text">Сливочное крем-брюле с карамельной подливкой</p>
+    <a class="product-hit__link" href="#">Быстрый просмотр</a>
+  </div>
+
+</section> <!--/product-hit-->
+
+<section class="info">
+  <h1 class="info-title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного 
+    производства на развес
+  </h1>
+  <div class="info__wrapper">
+
+    <p class="info__text">Все наше мороженое изготавливается на собственном производстве,
+       с использованием современного оборудования и проверенных временем технологий.</p>
+
+      <p class="info__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+         Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p> 
+
+      <p class="info__text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
+         с которыми нас связывает долговременное сотрудничество.</p>
+
+      <p class="info__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+         который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+
+  </div> <!--/info__wrapper-->
+</section> <!--/info-->
+
+<div class="wrapper-flex">
+  <article class="blog-news">
+    <h1 class="blog-news__title">Новое в нашем блоге</h1>
+    <a class="blog-news__link" href="#">10 способов сервировки фруктововых щербетов к столу</a>
+  </article> <!--/blog-news-->
+
+  <section class="distribution">
+    <p class="distribution__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+       что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+       <form class="distribution__form" action="">
+         <input class="distribution__input" type="email" placeholder="Электронная почта">
+         <button class="distribution__btn" type="submit">Отправить</button>
+       </form>
+  </section> <!--/distribution-->
+
+</div>
+
+<section class="address">
+  <div class="address__map">
+
+  </div>
+  <div class="address__box">
+    <h2 class="address__title">Адрес главного офиса и оффлайн магазина:</h2>
+    <p class="address__text"></p> 
+
+    <h2 class="address__title">Для заказов по телефону</h2>
+    <a class="address__text" href="tel:88124502525">8 812 450-25-25</a>
+    <p class="address__txt">(с 10 до 20 ежедневно)</p>
+    <button class="address__btn" type="button">Форма обратной связи</button>
+  </div>
+  
+</section> <!--/address-->
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
