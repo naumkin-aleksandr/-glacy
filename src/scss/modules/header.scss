@@ -1,4 +1,5 @@
 .header {
+
     &__wrapper {
         display: flex;
         align-items: center;
@@ -141,6 +142,8 @@
 }
 
 .search {
+    position: relative;
+
     &__open {
         display: flex;
         justify-content: center;
@@ -149,13 +152,71 @@
         height: 32px;
         background-color: rgba(255,255,255, .2);
         border-radius: 50%;
+        &:hover {
+            background-color: #f8f7f4;
+            transition: .2s;
+            & .search__icon {
+                fill: #000;
+            }
         }
+        &:hover +.search__form {
+            visibility: visible;
+            transition: .2s;
+        }
+    }
     &__icon {
         width: 18px;
         height: 18px;
         fill: #fff;
     }
+
+    &__form {
+        width: 340px;
+        height: 84px; 
+        padding: 20px 15px;
+        border-radius: 5px;
+        background-color: #f8f7f4;
+        position: absolute;
+        bottom: -90px;
+        right: 0;
+        visibility: hidden;
+        transition: .8s;
+        &:hover {
+            visibility: visible;
+            transition: .8s;
+        }
+    }
+
+    &__input {
+         width: 100%;
+         height: 44px;
+         padding-left: 14px;
+         border: 1px solid #d3d3d2;
+         border-radius: 4px;
+         font-family: "Roboto";
+         font-weight: 500;
+         font-size: 14px;
+         line-height: 24px;
+         @include placeholder {
+            font-family: "Roboto";
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #999999;
+          }
+         
+    }
+
+        
+
+        
 }
+
+
+
+
+
+
 
 .login {
     &__open {
@@ -168,6 +229,19 @@
         color: #fff;
         background-color: rgba(255,255,255, .2);
         border-radius: 15px;
+        &:hover {
+            background-color: #f8f7f4;
+            color: #000;
+            transition: .2s;
+            & .login__icon {
+                fill: #000;
+            }
+        }
+        &:hover +.search__form {
+            visibility: visible;
+            transition: .2s;
+        }
+
     }
     &__icon {
         width: 20px;
@@ -200,7 +274,7 @@
 
 .telephone {
     position: absolute;
-    bottom: -30px;
+    bottom: -45px;
     right: 0;
     &__text { 
         margin-bottom: 5px;
