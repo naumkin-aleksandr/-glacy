@@ -1,3 +1,12 @@
 
-@import "utilities/fonts.scss";
+// import utilities 
+@import "utilities/fonts.scss"; 
+@import "utilities/reset.scss";
+
+
+
+// import modules 
+@import "modules/common-style.scss";
+@import "modules/header.scss";
+
 

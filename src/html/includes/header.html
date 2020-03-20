@@ -1,59 +1,133 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="stylesheet" href="css/style.bundle.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title><%=title%></title>
-  </head>
-  <body>
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="stylesheet" href="css/style.bundle.css" />
+
+  <title><%=title%></title>
+</head>
+
+<body>
+  <svg class="none">
+
+    <symbol id="search" viewBox="0 0 511.999 511.999">
+      <g>
+        <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667
+        S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732
+        c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667
+        c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" />
+      </g>
+    </symbol>
+
+    <symbol id="login" viewBox="0 0 515.556 515.556">
+      <g>
+        <path d="m96.667 32.222v96.667h64.444v-32.222h290v322.222h-290v-32.222h-64.444v96.667h418.889v-451.112z"/>
+        <path d="m157.209 331.663 45.564 45.564 119.449-119.449-119.448-119.449-45.564 45.564 41.662 41.662h-198.872v64.445h198.872z"/>
+      </g>
+    </symbol>
+
+    <symbol id="market" viewBox="0 0 512 512">
+      <g>
+        <path d="m437 351c6.457 0 12.188-4.131 14.23-10.256l60-180c1.524-4.575.757-9.603-2.062-13.514-2.819-3.912-7.346-6.23-12.168-6.23h-377.293l-10.4-62.398c-3.631-21.788-22.299-37.602-44.388-37.602h-49.919c-8.284 0-15 6.716-15 15s6.716 15 15 15h49.919c7.363 0 13.585 5.271 14.796 12.534l42.285 253.707v28.759c0 21.651 15.371 39.775 35.772 44.045-5.169 6.428-8.272 14.584-8.272 23.455 0 20.677 16.823 37.5 37.5 37.5s37.5-16.823 37.5-37.5c0-8.436-2.801-16.228-7.521-22.5h140.041c-4.719 6.272-7.521 14.064-7.521 22.5 0 20.677 16.823 37.5 37.5 37.5s37.5-16.823 37.5-37.5c0-8.436-2.801-16.228-7.521-22.5h20.022c8.284 0 15-6.716 15-15s-6.716-15-15-15h-270c-8.271 0-15-6.729-15-15v-15zm-60-180h99.188l-10 30h-89.188zm0 60h79.188l-10 30h-69.188zm0 60h59.188l-10 30h-49.188zm-75-120h45v30h-45zm0 60h45v30h-45zm0 60h45v30h-45zm-75-120h45v30h-45zm0 60h45v30h-45zm0 60h45v30h-45zm-102.293-120h72.293v30h-67.293zm10 60h62.293v30h-57.293zm15 90-5-30h52.293v30z"/>
+      </g>
+    </symbol>
+   
+     <symbol>
+      <g>
+
+      </g>
+    </symbol>
+
+
+  </svg>
+
+
+
+
+  <div class="wrapper-page wrapper-page_gren wrapper-page_blue wrapper-page_brown">
 
     <header class="header">
       <div class="header__wrapper">
-          <div class="logo">
-            <a class="logo__link" href="#"></a>
-          </div>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#"></a>Каталог</li>
-              <li class="nav__item"><a class="nav__link" href="#"></a>Доставка и оплата</li>
-              <li class="nav__item"><a class="nav__link" href="#"></a>О компании</li>
-            </ul>
-          </nav> <!-- /nav-->
-          <div class="user-nav">
+
+        <a class="logo" href="#"></a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item_selected"><a class="nav__link nav__link_selected" href="#">Каталог </a>
+              <ul class="nav__subcat">
+                <li class="nav__subcat-item nav__subcat-item_separator"><a
+                    class="nav__subcat-link nav__subcat-link_bold" href="#">Новинки</a></li>
+                <li class="nav__subcat-item"><a class="nav__subcat-link nav__subcat-link_selected"
+                    href="#">Сливочное</a></li>
+                <li class="nav__subcat-item"><a class="nav__subcat-link" href="#">Щербеты</a></li>
+                <li class="nav__subcat-item"><a class="nav__subcat-link" href="#">Фруктовый лед</a></li>
+                <li class="nav__subcat-item"><a class="nav__subcat-link" href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Доставка и оплата </a></li>
+            <li class="nav__item"><a class="nav__link" href="#">О Компании </a></li>
+          </ul>
+        </nav> <!-- /nav-->
+
+        <div class="user-nav ">
+
+          <div class="user-nav__item">
             <div class="user__nav__search search">
-              <button class="search__open" type="button"></button>
-              <form class="search__form" action="">
+              <a class="search__open" href="#">
+                <svg class="search__icon">
+                  <use xlink:href="#search"></use>
+                </svg>
+              </a>
+              <form class="search__form none" action="">
                 <input class="search__input" type="search" placeholder="Что ищем?">
               </form>
-            </div> <!--/user-nav__search-->
-            
+            </div>
+            <!--/user-nav__search-->
+          </div>
+          <!--/user-nav__item-->
+
+          <div class="user-nav__item">
             <div class="user-nav__login login">
-              <button class="login__open" type="button">Вход</button>
-              <form class="login__form" action="">
+              <a class="login__open" href="#">
+                <svg class="login__icon"><use xlink:href="#login"></use></svg>
+                Вход
+              </a>
+              <form class="login__form none" action="">
                 <input class="login__input" type="email" placeholder="Элуктронная почта">
                 <input class="login__input" type="password" placeholder="Пароль">
                 <button class="login__btn" type="submit">Войти</button>
               </form>
-              <div class="login__box">
+              <div class="login__box none">
                 <a class="login__link" href="#">Забыли пароль?</a>
                 <a class="login__link" href="#">Новая регистрация</a>
               </div>
-            </div> <!--/login-->
-
-            <div class="user-nav__basket basket">
-              <button class="basket__open" type="button">Пусто</button>
-            </div> <!--/basket-->
-
-          </div>  <!--/user-nav-->
-
-          <div class="telephone">
-            <p class="telephone__text">С 10 до 20, ежедневно</p>
-            <a class="telephone__link" href="tel:88124502525">8 812 450-25-25</a>
+            </div>
+            <!--/login-->
           </div>
+          <!--/user-nav__item-->
 
-      </div> <!--/header__wrapper-->
+          <div class="user-nav__item">
+            <div class="user-nav__basket basket">
+              <a class="basket__open" href="#">
+                <svg class="basket__icon"><use xlink:href="#market"></use></svg>
+                Пусто</a>
+            </div>
+            <!--/basket-->
+          </div>
+          <!--/user-nav__item-->
+ 
+        </div>
+        <!--/user-nav-->
+
+        <div class="telephone ">
+          <p class="telephone__text">С 10 до 20, ежедневно</p>
+          <a class="telephone__link" href="tel:88124502525">8 812 450-25-25</a>
+        </div>
+
+      </div>
+      <!--/header__wrapper-->
     </header>

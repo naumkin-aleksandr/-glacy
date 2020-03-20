@@ -1,0 +1,222 @@
+.header {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+}
+
+.logo {
+    display: block;
+    margin-right: 24px;
+    width: 154px;
+    height: 64px;
+    background: url(../img/Logo.png) no-repeat center;
+
+}
+
+.nav {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        padding: 0 13px 0 13px;
+        line-height: 32px;
+        border-radius: 15px;
+        position: relative;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+            transition: .2s;
+            & .nav__link {
+                color: #000;
+            }
+            & .nav__subcat {
+                transition: .2s;
+                visibility: visible;
+            }
+        }
+        &:active {
+            box-shadow: inset 0 2px 1px #696969;
+        }
+        &_selected {
+            background-color: #d07058;
+        }
+       
+    }
+
+    &__link {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255,255,255, .2);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &__subcat {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 20px  20px rgba( 0, 0, 0, .4);
+        position: absolute;
+        top: 37px;
+        left: -7px;
+        transition: .8s;
+        visibility: hidden;
+
+        &-item {
+            padding: 3px 0;
+            position: relative;
+
+            &_separator {
+                &::before {
+                    content: "";
+                    width: 90%;
+                    height: 1px;
+                    background-color: #d1d0ce;
+                    position: absolute;
+                    bottom: 0;
+                    left: 5%;
+                    right: 5%;
+                }
+            }
+        }
+
+        &-link {
+            display: block;
+            padding: 0 20px 0 20px;
+            font-family: "Roboto";
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 28px;
+            color: #000;
+            white-space: nowrap;
+
+            &:hover {
+                background-color: #fbded7;
+                transition: .2s;
+            }
+
+            &:active {
+                background-color: #f6b5a5;
+                transition: .2s;
+
+                &.nav__item:active {
+                    box-shadow: none;
+                }
+
+            }
+
+            &_bold {
+                font-weight: 700;
+            }
+
+            &_selected {
+                background-color: #d07058;
+            }
+
+        }
+    }
+}
+
+.user-nav {
+    margin-left: auto;
+    display: flex;
+    &__item {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.search {
+    &__open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        background-color: rgba(255,255,255, .2);
+        border-radius: 50%;
+        }
+    &__icon {
+        width: 18px;
+        height: 18px;
+        fill: #fff;
+    }
+}
+
+.login {
+    &__open {
+        display: inline-block;
+        padding: 0 15px 0 15px;
+        font-family: "Roboto";
+        font-weight: 600;
+        line-height: 32px;
+        font-size: 14px;
+        color: #fff;
+        background-color: rgba(255,255,255, .2);
+        border-radius: 15px;
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        fill: #fff;
+    }
+}
+
+.basket {
+    &__open {
+        display: inline-block;
+        padding: 0 15px 0 15px;
+        font-family: "Roboto";
+        font-weight: 600;
+        line-height: 32px;
+        font-size: 14px;
+        color: #fff;
+        background-color: rgba(255,255,255, .2);
+        border-radius: 15px;
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        fill: #fff;
+    }
+}
+
+
+.telephone {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    &__text { 
+        margin-bottom: 5px;
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff;
+        text-align: right;
+
+    }
+    &__link {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 24px;
+        color: #fff;
+    }
+}

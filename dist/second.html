@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -7,14 +8,100 @@
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="stylesheet" href="css/style.bundle.css" />
 
-    <title>Второй заголовок | Проект</title>
+    <title>Gllacy-catalog</title>
   </head>
   <body>
-    <header><img src="img/logo.svg" id="logo" /></header>
 
-    <div class="container">Вторая страница.</div>
+    <header class="header">
+      <div class="header__wrapper">
+          <div class="logo">
+            <a class="logo__link" href="#"></a>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#"></a>Каталог</li>
+              <li class="nav__item"><a class="nav__link" href="#"></a>Доставка и оплата</li>
+              <li class="nav__item"><a class="nav__link" href="#"></a>О компании</li>
+            </ul>
+          </nav> <!-- /nav-->
+          <div class="user-nav">
+            <div class="user__nav__search search">
+              <button class="search__open" type="button"></button>
+              <form class="search__form" action="">
+                <input class="search__input" type="search" placeholder="Что ищем?">
+              </form>
+            </div> <!--/user-nav__search-->
+            
+            <div class="user-nav__login login">
+              <button class="login__open" type="button">Вход</button>
+              <form class="login__form" action="">
+                <input class="login__input" type="email" placeholder="Элуктронная почта">
+                <input class="login__input" type="password" placeholder="Пароль">
+                <button class="login__btn" type="submit">Войти</button>
+              </form>
+              <div class="login__box">
+                <a class="login__link" href="#">Забыли пароль?</a>
+                <a class="login__link" href="#">Новая регистрация</a>
+              </div>
+            </div> <!--/login-->
 
-    <footer>Harrix</footer>
+            <div class="user-nav__basket basket">
+              <button class="basket__open" type="button">Пусто</button>
+            </div> <!--/basket-->
+
+          </div>  <!--/user-nav-->
+
+          <div class="telephone">
+            <p class="telephone__text">С 10 до 20, ежедневно</p>
+            <a class="telephone__link" href="tel:88124502525">8 812 450-25-25</a>
+          </div>
+
+      </div> <!--/header__wrapper-->
+    </header>
+
+
+
+
+
+    <footer class="footer">
+
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="" class="social__link">
+              <svg class="social__icon"></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">
+              <svg class="social__icon"></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">
+              <svg class="social__icon"></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">
+              <svg class="social__icon"></svg>
+            </a>
+          </li>
+        </ul>
+      </div>  <!--/social-->
+
+      <div class="additionally">
+        <a class="additionally__link" href="#">Для поставщиков</a>
+        <a class="additionally__link" href="#">О производстве</a>
+        <a class="additionally__link" href="#">Наши документы</a>
+        <a class="additionally__link" href="#">Экологические стандарты</a>
+      </div> <!--/additionally-->
+
+      <div class="copy">
+        <p class="copy__text">сделано в HTML Academy &#169; 2017</p>
+      </div> 
+
+    </footer>
 
     <script src="js/bundle.js"></script>
   </body>
