@@ -2,6 +2,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0 27px 0 27px;
+    position: relative;
 
     &_gren {
         background-color: #849d8f;
@@ -11,4 +12,15 @@
 
 .none {
     display: none;
+}
+
+.btn {
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(0deg, #e74a35, #f26843);
+    // border-radius: 40% / 100%;
+    border-radius: 25px;
+    box-shadow: 0 1px 2px #ac1000;
+    cursor: pointer;
 }

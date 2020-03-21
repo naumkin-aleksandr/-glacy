@@ -1,0 +1,56 @@
+.special-offers {
+    &__wrapper {
+        min-height: 570px;
+        position: relative;
+    }
+    &__wrapper-btn {
+        position: absolute;
+        top: 563px;
+        left: 0;
+        z-index: 3;
+    }
+    &__btn {
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        background-color: rgba(0,0,0,0);
+        border: 2px solid #fff;
+        cursor: pointer;
+
+        &_selected {
+            background-color: #fff;
+        }
+    }
+
+    &__box {
+        width: 100%;
+        min-height: 850px;
+        text-align: center;
+        background:
+                    url(../img/creme-brulee.png) no-repeat top 84px left 230px,
+                    url(../img/raspberries.png) no-repeat top 126px right 270px,
+                    radial-gradient(circle , rgba(255, 255, 255, .4) 5%, #849d8f 70%);
+        position: absolute;   
+        top: -64px; 
+
+    }
+
+    &__title {
+        padding-top: 420px;
+        margin-bottom: 27px;
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 60px;
+        color: #fff;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 278px;
+        line-height: 63px;
+        font-size: 32px;
+
+    }
+
+}

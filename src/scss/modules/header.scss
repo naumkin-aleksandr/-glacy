@@ -1,9 +1,12 @@
 .header {
+    
 
     &__wrapper {
         display: flex;
         align-items: center;
         position: relative;
+        z-index: 1;
+
     }
 }
 
@@ -172,12 +175,11 @@
 
     &__form {
         width: 340px;
-        height: 84px; 
         padding: 20px 15px;
         border-radius: 5px;
         background-color: #f8f7f4;
         position: absolute;
-        bottom: -90px;
+        top: 40px;
         right: 0;
         visibility: hidden;
         transition: .8s;
@@ -219,6 +221,7 @@
 
 
 .login {
+    position: relative;
     &__open {
         display: inline-block;
         padding: 0 15px 0 15px;
@@ -249,6 +252,62 @@
         margin-right: 8px;
         fill: #fff;
     }
+    &__form {
+        width: 277px;
+        padding: 20px 15px;
+        border-radius: 5px;
+        background-color: #f8f7f4;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        z-index: 2;
+    }
+    &__input {
+        width: 241px;
+        height: 44px;
+        margin-bottom: 20px;
+        padding-left: 14px;
+        border: 1px solid #d3d3d2;
+        border-radius: 4px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        @include placeholder {
+           font-family: "Roboto";
+           font-weight: 500;
+           font-size: 14px;
+           line-height: 24px;
+           color: #999999;
+         }
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__btn {
+        width: 100px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    &__wrapper-link {
+        margin-left: auto;
+        display: flex;
+        flex-flow: column;
+    }
+
+    &__link {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;
+        color: #323232;
+        text-decoration: underline;
+    }
+
+
 }
 
 .basket {
