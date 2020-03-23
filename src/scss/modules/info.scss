@@ -1,0 +1,45 @@
+.info {
+    margin-bottom: 40px;
+    padding: 25px 20px 0 20px;
+    background: url(../img/bg-wafer.png) no-repeat center;
+    border-radius: 12px;
+
+    &__title {
+        margin-bottom: 25px;
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: #323232;
+    }
+
+    &__wrapper-text {
+        display: flex;
+    }
+
+    &__box {
+        flex-basis: 50%;
+    }
+
+    &__text {
+        margin-bottom: 25px;
+        padding-left: 56px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #323232;
+        position: relative;
+    }
+
+    &__icon {
+        padding: 4px;
+        width: 49px;
+        height: 49px;
+        position: absolute;
+        border: 3px solid #323232;
+        border-radius: 50%;
+        top: -15px;
+        left: 0;
+    }
+}
