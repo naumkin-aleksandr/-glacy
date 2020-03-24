@@ -1,0 +1,46 @@
+.distribution {
+    margin-left: auto;
+    padding: 6px;
+    flex-basis: 560px;
+    min-height: 220px;
+    border-radius: 12px;
+    background: repeating-linear-gradient(135deg, #f8f7f4 1px 8px, #92cdff 9px 16px , #f8f7f4 17px 25px, #fe9e90 26px 35px);
+
+    &__wrapper {
+        height: 100%;
+        padding: 0 20px;
+        background-color: #f8f7f4;
+        border-radius: 8px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+        padding-top: 30px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #5a5a5a;
+    }
+
+    &__input {
+        width: 368px;
+        padding: 0 0 0 15px;
+        border: 1px solid #d3d3d2;
+        border-radius: 3px;
+        line-height: 42px;
+        font-family: "Roboto";
+        font-weight: 500;
+        @include placeholder {
+            color: #999999; 
+        }
+    }
+
+    &__btn {
+        margin-left: 6px;
+        padding: 0;
+        width: 129px;
+        font-size: 18px;
+         line-height: 44px;
+    }
+}

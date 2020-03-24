@@ -1,0 +1,26 @@
+.blog-news {
+    padding: 20px 260px 20px 20px;
+    flex-basis: 560px;
+    min-height: 220px;
+    background: url(../img/bg-clinic.png) no-repeat center;
+    border-radius: 12px;
+
+    &__title {
+        margin-bottom: 10px;
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #323232;
+    }
+
+    &__link {
+        margin-bottom: 80px;
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: #323232;
+        text-decoration: underline;
+    }
+}

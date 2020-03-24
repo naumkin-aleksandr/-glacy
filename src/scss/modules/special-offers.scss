@@ -26,12 +26,24 @@
         width: 100%;
         min-height: 850px;
         text-align: center;
-        background:
-                    url(../img/big-creme-brulee.png) no-repeat top 84px left 230px,
-                    url(../img/big-raspberries.png) no-repeat top 126px right 270px,
-                    radial-gradient(circle , rgba(255, 255, 255, .4) 10%, #849d8f 60%);
+        background: radial-gradient(circle , rgba(255, 255, 255, .4) 10%, #849d8f00 60%);
         position: absolute;   
         top: -64px; 
+        // z-index: 0;
+    }
+
+    &__img {
+        position: absolute;
+        &_one {
+            top: 84px;
+            left: 230px;
+            z-index: 1;
+        }
+
+        &_two {
+            top: 126px;
+            right: 270px;
+        }
 
     }
 
@@ -43,6 +55,8 @@
         font-size: 60px;
         line-height: 60px;
         color: #fff;
+        position: relative;
+        z-index: 2;
     }
 
     &__link {

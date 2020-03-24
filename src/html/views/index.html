@@ -12,19 +12,25 @@
       <button class="special-offers__btn"></button>
     </div>
 
-    <div class="special-offers__box">
+    <div class="special-offers__box none">
+      <img class="special-offers__img special-offers__img_one" src="img/big-creme-brulee.png" alt=""> 
+      <img class="special-offers__img special-offers__img_two" src="img/big-raspberries.png" alt="">
       <h1 class="special-offers__title">Крем-брюле и пломбир <br> с малиновым джемом</h1>
       <a class="special-offers__link btn" href="#">Давайте оба!</a>
     </div>
 
     <div class="special-offers__box none">
-      <h1 class="special-offers__title">Шоколадный пломбир и лимонный сорбет</h1>
-      <a class="special-offers__link" href="#">Давайте оба!</a>
+      <img class="special-offers__img special-offers__img_one" src="img/big-chocolate-ice-cream.png" alt=""> 
+      <img class="special-offers__img special-offers__img_two" src="img/big-lemon-sorbet.png" alt="">
+      <h1 class="special-offers__title">Шоколадный пломбир <br> и лимонный сорбет</h1>
+      <a class="special-offers__link btn" href="#">Давайте оба!</a>
     </div>
 
-    <div class="special-offers__box none">
-      <h1 class="special-offers__title">Пломбир с помадкой и клубничный щербет</h1>
-      <a class="special-offers__link" href="#">Давайте оба!</a>
+    <div class="special-offers__box ">
+      <img class="special-offers__img special-offers__img_one" src="img/big-ice-cream-with-fondant.png" alt=""> 
+      <img class="special-offers__img special-offers__img_two" src="img/big-strawberry-sorbet.png" alt="">
+      <h1 class="special-offers__title">Пломбир с помадкой <br> и клубничный щербет</h1>
+      <a class="special-offers__link btn" href="#">Давайте оба!</a>
     </div>
   </div>
   <!--/special-offers__wrapper-->
@@ -72,7 +78,7 @@
     </div>
 
     <div class="product-hit__box">
-      <img class="product-hit__img" src="img/creamy-clinic.png" alt="Мороженое сливочно-клубничное">
+      <img class="product-hit__img" src="img/creamy-strawberry.png" alt="Мороженое сливочно-клубничное">
       <p class="product-hit__price"> 355&#8381;<span class="product-hit__price-text">/кг</span></p>
       <p class="product-hit__text">Сливочно-клубничное с присыпкой из белого шоколада</p>
       <a class="product-hit__link btn" href="#">Быстрый просмотр</a>
@@ -134,29 +140,33 @@
   <!--/blog-news-->
 
   <section class="distribution">
+
+    <div class="distribution__wrapper"> 
     <p class="distribution__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
       что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
     <form class="distribution__form" action="">
       <input class="distribution__input" type="email" placeholder="Электронная почта">
-      <button class="distribution__btn" type="submit">Отправить</button>
+      <button class="distribution__btn btn" type="submit">Отправить</button>
     </form>
+
+  </div>
   </section>
   <!--/distribution-->
 
 </div>
 
 <section class="address">
-  <div class="address__map">
 
-  </div>
+  <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2736494793066!2d30.328433273438847!3d59.938168311449424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585000435006!5m2!1sru!2sru"  frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
   <div class="address__box">
-    <h2 class="address__title">Адрес главного офиса и оффлайн магазина:</h2>
-    <p class="address__text"></p>
+    <p class="address__text_small">Адрес главного офиса <br>и оффлайн магазина:</p>
+    <p class="address__text address__text_indent">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
 
-    <h2 class="address__title">Для заказов по телефону</h2>
+    <p class="address__text_small">Для заказов по телефону</p>
     <a class="address__text" href="tel:88124502525">8 812 450-25-25</a>
-    <p class="address__txt">(с 10 до 20 ежедневно)</p>
-    <button class="address__btn" type="button">Форма обратной связи</button>
+    <p class="address__text_small">(с 10 до 20 ежедневно)</p>
+    <button class="address__btn btn" type="button">Форма обратной связи</button>
   </div>
 
 </section>
