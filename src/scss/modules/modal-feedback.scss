@@ -1,0 +1,93 @@
+.modal-feedback {
+   position: absolute;
+
+   top: 70%;
+   left: 50%;
+   transform: translateX(-50%);
+    &__wrapper {
+        width: 477px;
+        padding: 15px 25px 25px 25px;   
+        border-radius: 8px;
+        background-color: #f8f7f4;
+        position: relative;
+    }
+
+    &__close {
+        padding: 0;
+        background-color: none;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+
+        &::before {
+            content: "";
+            width: 2px;
+            height: 25px;
+            background-color: #000;
+            transform: rotate(45deg);
+            position: absolute;
+        }
+
+        &::after {
+            content: "";
+            width: 2px;
+            height: 25px;
+            background-color: #000;
+            transform: rotate(-45deg);
+            position: absolute;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    &__form {
+        display: flex;
+        flex-flow: column;
+    }
+
+    &__input {
+        margin-bottom: 20px;
+        width: 267px;
+        padding-left: 15px;
+        line-height: 42px;
+        border: 1px solid #d3d3d2;
+        border-radius: 4px;
+        @include placeholder {
+            font-family: "Roboto";
+            font-weight: 500;
+            font-size: 16px;
+            color: #999999;
+        }
+    }
+
+    &__txt {
+        margin-bottom: 25px;
+        // width: 267px;
+        height: 155px;
+        padding-top: 10px;
+        padding-left: 15px;
+        border: 1px solid #d3d3d2;
+        border-radius: 4px;
+        @include placeholder {
+            font-family: "Roboto";
+            font-weight: 500;
+            font-size: 16px;
+            color: #999999;
+        }
+    }
+
+    &__btn {
+        margin-left: auto;
+        width: 139px;
+        line-height: 44px;
+        font-size: 18px;
+    }
+
+}
