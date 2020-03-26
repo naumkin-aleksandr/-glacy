@@ -1,0 +1,30 @@
+.breadcrumbs {
+    margin: 25px 0 5px 0;
+    display: flex;
+
+    &__link {
+        margin-right: 20px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff;
+        text-decoration: underline rgba(255, 255, 255, .4);
+        position: relative;
+
+        &::before {
+            content: " » ";
+            position: absolute;
+            top: 0;
+            right: -14px;
+        }
+        &:last-child {
+            margin-right: 0;
+            text-decoration: none;
+        }
+
+        &:last-child::before {
+            display: none;
+        }
+    }
+}

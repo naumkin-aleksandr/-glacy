@@ -54,3 +54,21 @@ specialOffersBtn3.addEventListener("click", function(evt){
     specialOffersBox2.classList.add("none");
     specialOffersBox3.classList.remove("none");
 });
+
+
+let btnFeedback = document.querySelector("#btn-feedback");
+let modalFeedback = document.querySelector("#modal-feedback");
+let closeModalFeedback = document.querySelector("#modal-feedback__close");
+
+btnFeedback.addEventListener("click", function(evt){
+    evt.preventDefault();
+    modalFeedback.classList.remove("none");
+    pageBg.classList.add("wrapper-page_roily");
+});
+
+closeModalFeedback.addEventListener("click", function(evt){
+    evt.preventDefault();
+    modalFeedback.classList.add("none");
+    pageBg.classList.remove("wrapper-page_roily");
+
+});

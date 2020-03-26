@@ -1,9 +1,10 @@
 .modal-feedback {
    position: absolute;
-
    top: 70%;
    left: 50%;
    transform: translateX(-50%);
+   z-index: 10;
+
     &__wrapper {
         width: 477px;
         padding: 15px 25px 25px 25px;   
@@ -13,29 +14,39 @@
     }
 
     &__close {
+        width: 19px;
+        height: 19px;
         padding: 0;
-        background-color: none;
+        background-color: rgba(255, 255, 255, 0);
         cursor: pointer;
         position: absolute;
         top: 15px;
         right: 25px;
+         &:hover::before,
+         &:hover::after {
+            background-color: red;
+        }
 
         &::before {
             content: "";
-            width: 2px;
+            width: 3px;
             height: 25px;
             background-color: #000;
             transform: rotate(45deg);
             position: absolute;
+            top: -3px;
+            left: 9px;           
         }
 
         &::after {
             content: "";
-            width: 2px;
+            width: 3px;
             height: 25px;
             background-color: #000;
             transform: rotate(-45deg);
             position: absolute;
+            top: -3px;
+            left: 9px;
         }
     }
 
@@ -45,6 +56,7 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 28px;
+        
     }
 
     &__form {
