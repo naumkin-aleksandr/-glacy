@@ -1,0 +1,32 @@
+.pagination {
+    margin-bottom: 30px;
+    display: flex;
+
+    &__list {
+        margin-left: auto;
+        text-align: center;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 25px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: #fff;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, .4);
+        }
+
+        &_active {
+            color: #000;
+            background-color: #fff;
+            &:hover {
+                background-color: #fff;
+            }
+        }
+    }
+}

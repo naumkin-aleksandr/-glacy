@@ -20,10 +20,14 @@
     <div class="form-catalog__wrapper">
       <div class="form-catalog__box">
         <p class="form-catalog__title">Сортировка:</p>
-        <div class="form-catalog__bl">
+        <div class="form-catalog__bl form-catalog__bl_white">
           <select class="form-catalog__select" name="form-catalog-select" >
-            <option value="popularity">по популярности</option>
-            <option value="minimum-price">по цене &#11014;</option>
+            <option  value="popularity">по популярности</option>
+            <option  value="minimum-price">сначала новинки</option>
+            <option  value="minimum-price">по возрастанию цены</option>
+            <option  value="minimum-price">по убыавнию цены</option>
+            <option  value="minimum-price"> &#11014; [eq</option>
+
           </select>
         </div> <!--/form-catalog__bl-->
       </div> <!--/form-catalog__box-->
@@ -36,7 +40,7 @@
 
       <div class="form-catalog__box">
         <p class="form-catalog__title">Жирность:</p>
-        <div class="form-catalog__bl">
+        <div class="form-catalog__bl form-catalog__bl_white">
           <input class="form-catalog__input-radio" id="form-catalog__input-radio-1" type="radio" name="form-catalog-radio">
           <label class="form-catalog__label-radio" for="form-catalog__input-radio-1">0%</label>
           <input class="form-catalog__input-radio" id="form-catalog__input-radio-2" type="radio" name="form-catalog-radio" checked>
@@ -53,7 +57,7 @@
     <div class="form-catalog__wrapper">
       <div class="form-catalog__box">
         <p class="form-catalog__title"> Наполнители:</p>
-        <div class="form-catalog__bl">
+        <div class="form-catalog__bl form-catalog__bl_white">
           <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-1" type="checkbox" name="form-catalog-checkbox" checked>
           <label class="form-catalog__label-checkbox" for="form-catalog__input-checkbox-1">шоколадные</label>
           <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-2" type="checkbox" name="form-catalog-checkbox" checked>
@@ -74,7 +78,111 @@
     </div> <!--/form-catalog__wrapper-->
 
   </form>  <!--/catalog__form-->
+
+
+  <div class="catalog__product-list"> 
+
+    <div class="product">
+      <img class="product__img" src="img/creamy-orange.png" alt="Мороженое  сливочное с апельсиновым джемом">
+      <p class="product__price"> 310&#8381;<span class="product__price-text">/кг</span></p>
+      <p class="product__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+      <a class="product__link btn" href="#">Быстрый просмотр</a>
+    </div>
+
+    <div class="product ">
+      <img class="product__img" src="img/cream-coffee.png" alt="Мороженое сливочное-кофейное">
+      <p class="product__price"> 380&#8381;<span class="product__price-text">/кг</span></p>
+      <p class="product__text">Сливочное-кофейное с кусочками шоколада</p>
+      <a class="product__link btn" href="#">Быстрый просмотр</a>
+    </div>
+
+    <div class="product">
+      <img class="product__img" src="img/creamy-strawberry.png" alt="Мороженое сливочно-клубничное">
+      <p class="product__price"> 355&#8381;<span class="product__price-text">/кг</span></p>
+      <p class="product__text">Сливочно-клубничное с присыпкой из белого шоколада</p>
+      <a class="product__link btn" href="#">Быстрый просмотр</a>
+    </div>
+
+    <div class="product">
+      <img class="product__img" src="img/creme-brulee.png" alt="Мороженое сливочное крем-брюле">
+      <p class="product__price"> 415&#8381;<span class="product__price-text">/кг</span></p>
+      <p class="product__text">Сливочное крем-брюле с карамельной подливкой</p>
+      <a class="product__link btn" href="#">Быстрый просмотр</a>
+    </div>
+
+    <div class="product">
+      <img class="product__img" src="img/creamy-lingonberries.png" alt="Мороженое сливочное с брусничным джемом">
+      <p class="product__price"> 325&#8381;<span class="product__price-text">/кг</span></p>
+      <p class="product__text">Сливочное с брусничным джемом</p>
+      <a class="product__link btn" href="#">Быстрый просмотр</a>
+    </div>
+
+    <div class="product">
+      <img class="product__img" src="img/creamy-blueberries.png" alt="Мороженое сливочно-черничное с цельными ягодами черники">
+      <p class="product__price"> 410&#8381;<span class="product__price-text">/кг</span></p>
+      <p class="product__text">Сливочно-черничное с цельными ягодами черники</p>
+      <a class="product__link btn" href="#">Быстрый просмотр</a>
+    </div>
+
+    <div class="product">
+      <img class="product__img" src="img/creamy-lemon.png" alt="Мороженое сливочно-лимонное с карамельной присыпкой">
+      <p class="product__price"> 375&#8381;<span class="product__price-text">/кг</span></p>
+      <p class="product__text">Сливочно-лимонное с карамельной присыпкой</p>
+      <a class="product__link btn" href="#">Быстрый просмотр</a>
+    </div>
+
+    <div class="product">
+      <img class="product__img" src="img/creamy-chocolate-chips.png" alt="Мороженое сливочное с шоколадной стружкой">
+      <p class="product__price"> 320&#8381;<span class="product__price-text">/кг</span></p>
+      <p class="product__text">Сливочное с шоколадной стружкой</p>
+      <a class="product__link btn" href="#">Быстрый просмотр</a>
+    </div>
+
+    <div class="product">
+      <img class="product__img" src="img/creamy-vanilla-chocolate.png" alt="Мороженое сливочно-ванильное с кусочками шоколада">
+      <p class="product__price"> 375&#8381;<span class="product__price-text">/кг</span></p>
+      <p class="product__text">Сливочно-ванильное с кусочками шоколада</p>
+      <a class="product__link btn" href="#">Быстрый просмотр</a>
+    </div>
+
+    <div class="product">
+      <img class="product__img" src="img/creamy-menthol-syrup.png" alt="Мороженое сливочное с ментоловым сиропом">
+      <p class="product__price"> 375&#8381;<span class="product__price-text">/кг</span></p>
+      <p class="product__text">Сливочное с ментоловым сиропом</p>
+      <a class="product__link btn" href="#">Быстрый просмотр</a>
+    </div>
+
+    <div class="product">
+      <img class="product__img" src="img/creamy-dark-chocolate.png" alt="Мороженое сливочное с кусочками черного шоколада">
+      <p class="product__price"> 375&#8381;<span class="product__price-text">/кг</span></p>
+      <p class="product__text">Сливочное с кусочками черного шоколада</p>
+      <a class="product__link btn" href="#">Быстрый просмотр</a>
+    </div>
+
+    <div class="product">
+      <img class="product__img" src="img/creamy-mint-syrup.png" alt="Мороженое сливочное с мятным сиропом">
+      <p class="product__price"> 375&#8381;<span class="product__price-text">/кг</span></p>
+      <p class="product__text">Сливочное с мятным сиропом</p>
+      <a class="product__link btn" href="#">Быстрый просмотр</a>
+    </div>
+
+  </div> <!--/catalog__product-list-->
+
+  <div class="catalg__pagination pagination"> 
+    <div class="pagination__list">
+      <a class="pagination__link_left" href="#"></a>
+      <a class="pagination__link pagination__link_active" href="#">1</a>
+      <a class="pagination__link" href="#">2</a>
+      <a class="pagination__link" href="#">3</a>
+      <a class="pagination__link" href="#">4</a>
+      <a class="pagination__link" href="#">5</a>
+      <a class="pagination__link_right" href="#"></a>
+
+    </div>
+
+  </div> <!--/catalog__pagination-->
 </section> <!--/catalog-->
+
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
 

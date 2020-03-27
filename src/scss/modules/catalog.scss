@@ -1,5 +1,7 @@
 .catalog {
 
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+
     &__title {
         margin-bottom: 30px;
         font-family: "Roboto";
@@ -7,5 +9,11 @@
         font-size: 35px;
         line-height: 41px;
         color: #fff;
+    }
+
+    &__product-list {
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 50px;
     }
 }
