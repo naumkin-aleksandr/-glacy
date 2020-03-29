@@ -1,5 +1,6 @@
 .breadcrumbs {
     margin: 25px 0 5px 0;
+    padding: 0 27px 0 27px;
     display: flex;
 
     &__link {
@@ -18,13 +19,30 @@
             top: 0;
             right: -14px;
         }
+
         &:last-child {
             margin-right: 0;
             text-decoration: none;
+            cursor: default;
+
+            &:hover {
+                color: #fff;
+            }
+
+            &::before {
+                display: none;
+            }
         }
 
-        &:last-child::before {
-            display: none;
+        &:hover {
+            color: #ffbc9e;
+            text-decoration-color: #ffbd9e;
+            transition: .2s;
+
+            &::before {
+                color: #fff;
+            }
         }
+        
     }
 }

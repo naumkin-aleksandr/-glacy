@@ -1,12 +1,7 @@
 .product {
-        flex-basis: 267px;
-        // width: 267px;
-        margin-right: 26px;
+        flex-basis: 293px;
+        padding: 0 13px 0 13px;
         position: relative;
-
-        &:nth-child(4n) {
-            margin-right: 0;
-        }
 
         &_hit {  
             &::before {

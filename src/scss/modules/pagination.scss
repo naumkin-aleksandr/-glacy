@@ -1,5 +1,6 @@
 .pagination {
     margin-bottom: 30px;
+    padding: 0 27px 0 27px;
     display: flex;
 
     &__list {
@@ -26,6 +27,15 @@
             background-color: #fff;
             &:hover {
                 background-color: #fff;
+            }
+        }
+
+        &_disabled {
+            opacity: .2;
+            
+            &:hover {
+                background: none;
+                cursor: default;
             }
         }
     }

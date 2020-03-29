@@ -1,7 +1,6 @@
 .wrapper-page {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 27px 0 27px;
     position: relative;
 
     &_gren {
@@ -62,7 +61,6 @@
     
 
     &:hover::before {
-    // background: black;
     background: #f17c64;
     transition: .2s;
     }
@@ -75,5 +73,6 @@
 
 .wrapper-flex {
     margin-bottom: 40px;
+    padding: 0 27px 0 27px;
     display: flex;
 }

@@ -4,83 +4,108 @@
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<div class="breadcrumbs"> 
+<div class="breadcrumbs">
 
   <a class="breadcrumbs__link" href="index.html">Главная</a>
   <a class="breadcrumbs__link" href="#">Каталог</a>
   <a class="breadcrumbs__link" href="#">Сливочное</a>
+  
 
-</div> <!--/breadcrumbs-->
+
+</div>
+<!--/breadcrumbs-->
 
 
-<section class="catalog"> 
+<section class="catalog">
   <h1 class="catalog__title">Сливочное мороженое</h1>
-  <form class="catalog__form form-catalog" action=""> 
+
+  <form class="catalog__form form-catalog" action="">
 
     <div class="form-catalog__wrapper">
       <div class="form-catalog__box">
         <p class="form-catalog__title">Сортировка:</p>
-        <div class="form-catalog__bl form-catalog__bl_white">
-          <select class="form-catalog__select" name="form-catalog-select" >
-            <option  value="popularity">по популярности</option>
-            <option  value="minimum-price">сначала новинки</option>
-            <option  value="minimum-price">по возрастанию цены</option>
-            <option  value="minimum-price">по убыавнию цены</option>
-            <option  value="minimum-price"> &#11014; [eq</option>
-
+        <div class="form-catalog__bl">
+          <select class="form-catalog__select" name="form-catalog-select">
+            <option value="popularity">по популярности </option>
+            <option value="minimum-price">по возрастанию цены</option>
+            <option value="minimum-price">по убыавнию цены</option>
           </select>
-        </div> <!--/form-catalog__bl-->
-      </div> <!--/form-catalog__box-->
+        </div>
+        <!--/form-catalog__bl-->
+      </div>
+      <!--/form-catalog__box-->
 
       <div class="form-catalog__box">
         <p class="form-catalog__title">Цена: 100 руб. - 500 руб.</p>
-        <div class="form-catalog__bl"> </div> <!--/form-catalog__bl-->
 
-      </div> <!--/form-catalog__box-->
+        <div class="form-catalog__bl">
+          <input class="form-catalog__range" type="range" min="0" max="700" value="200">
+
+        </div>
+        <!--/form-catalog__bl-->
+
+      </div>
+      <!--/form-catalog__box-->
 
       <div class="form-catalog__box">
         <p class="form-catalog__title">Жирность:</p>
         <div class="form-catalog__bl form-catalog__bl_white">
-          <input class="form-catalog__input-radio" id="form-catalog__input-radio-1" type="radio" name="form-catalog-radio">
+          <input class="form-catalog__input-radio" id="form-catalog__input-radio-1" type="radio"
+            name="form-catalog-radio">
           <label class="form-catalog__label-radio" for="form-catalog__input-radio-1">0%</label>
-          <input class="form-catalog__input-radio" id="form-catalog__input-radio-2" type="radio" name="form-catalog-radio" checked>
+          <input class="form-catalog__input-radio" id="form-catalog__input-radio-2" type="radio"
+            name="form-catalog-radio" checked>
           <label class="form-catalog__label-radio" for="form-catalog__input-radio-2">до 10%</label>
-          <input class="form-catalog__input-radio" id="form-catalog__input-radio-3" type="radio" name="form-catalog-radio">
+          <input class="form-catalog__input-radio" id="form-catalog__input-radio-3" type="radio"
+            name="form-catalog-radio">
           <label class="form-catalog__label-radio" for="form-catalog__input-radio-3">до 30%</label>
-          <input class="form-catalog__input-radio" id="form-catalog__input-radio-4" type="radio" name="form-catalog-radio">
+          <input class="form-catalog__input-radio" id="form-catalog__input-radio-4" type="radio"
+            name="form-catalog-radio">
           <label class="form-catalog__label-radio" for="form-catalog__input-radio-4">выше 30%</label>
 
-        </div> <!--/form-catalog__bl-->
-      </div> <!--/form-catalog__box-->
-    </div> <!--/form-catalog__wrapper-->
+        </div>
+        <!--/form-catalog__bl-->
+      </div>
+      <!--/form-catalog__box-->
+    </div>
+    <!--/form-catalog__wrapper-->
 
     <div class="form-catalog__wrapper">
       <div class="form-catalog__box">
         <p class="form-catalog__title"> Наполнители:</p>
         <div class="form-catalog__bl form-catalog__bl_white">
-          <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-1" type="checkbox" name="form-catalog-checkbox" checked>
+          <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-1" type="checkbox"
+            name="form-catalog-checkbox" checked>
           <label class="form-catalog__label-checkbox" for="form-catalog__input-checkbox-1">шоколадные</label>
-          <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-2" type="checkbox" name="form-catalog-checkbox" checked>
+          <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-2" type="checkbox"
+            name="form-catalog-checkbox" checked>
           <label class="form-catalog__label-checkbox" for="form-catalog__input-checkbox-2">сахарные присыпки</label>
-          <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-3" type="checkbox" name="form-catalog-checkbox">
+          <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-3" type="checkbox"
+            name="form-catalog-checkbox">
           <label class="form-catalog__label-checkbox" for="form-catalog__input-checkbox-3">фрукты</label>
-          <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-4" type="checkbox" name="form-catalog-checkbox">
+          <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-4" type="checkbox"
+            name="form-catalog-checkbox">
           <label class="form-catalog__label-checkbox" for="form-catalog__input-checkbox-4">сиропы</label>
-          <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-5" type="checkbox" name="form-catalog-checkbox">
+          <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-5" type="checkbox"
+            name="form-catalog-checkbox">
           <label class="form-catalog__label-checkbox" for="form-catalog__input-checkbox-5">джемы</label>
-        </div> <!--/form-catalog__bl-->
-      </div> <!--/form-catalog__box-->
+        </div>
+        <!--/form-catalog__bl-->
+      </div>
+      <!--/form-catalog__box-->
 
       <!-- <div class="form-catalog__box"> -->
-        <button class="form-catalog__btn" type="submit">Применить</button>
+      <button class="form-catalog__btn" type="submit">Применить</button>
       <!-- </div> /form-catalog__box -->
 
-    </div> <!--/form-catalog__wrapper-->
+    </div>
+    <!--/form-catalog__wrapper-->
 
-  </form>  <!--/catalog__form-->
+  </form>
+  <!--/catalog__form-->
 
 
-  <div class="catalog__product-list"> 
+  <div class="catalog__product-list">
 
     <div class="product">
       <img class="product__img" src="img/creamy-orange.png" alt="Мороженое  сливочное с апельсиновым джемом">
@@ -118,7 +143,8 @@
     </div>
 
     <div class="product">
-      <img class="product__img" src="img/creamy-blueberries.png" alt="Мороженое сливочно-черничное с цельными ягодами черники">
+      <img class="product__img" src="img/creamy-blueberries.png"
+        alt="Мороженое сливочно-черничное с цельными ягодами черники">
       <p class="product__price"> 410&#8381;<span class="product__price-text">/кг</span></p>
       <p class="product__text">Сливочно-черничное с цельными ягодами черники</p>
       <a class="product__link btn" href="#">Быстрый просмотр</a>
@@ -139,7 +165,8 @@
     </div>
 
     <div class="product">
-      <img class="product__img" src="img/creamy-vanilla-chocolate.png" alt="Мороженое сливочно-ванильное с кусочками шоколада">
+      <img class="product__img" src="img/creamy-vanilla-chocolate.png"
+        alt="Мороженое сливочно-ванильное с кусочками шоколада">
       <p class="product__price"> 375&#8381;<span class="product__price-text">/кг</span></p>
       <p class="product__text">Сливочно-ванильное с кусочками шоколада</p>
       <a class="product__link btn" href="#">Быстрый просмотр</a>
@@ -153,7 +180,8 @@
     </div>
 
     <div class="product">
-      <img class="product__img" src="img/creamy-dark-chocolate.png" alt="Мороженое сливочное с кусочками черного шоколада">
+      <img class="product__img" src="img/creamy-dark-chocolate.png"
+        alt="Мороженое сливочное с кусочками черного шоколада">
       <p class="product__price"> 375&#8381;<span class="product__price-text">/кг</span></p>
       <p class="product__text">Сливочное с кусочками черного шоколада</p>
       <a class="product__link btn" href="#">Быстрый просмотр</a>
@@ -166,23 +194,25 @@
       <a class="product__link btn" href="#">Быстрый просмотр</a>
     </div>
 
-  </div> <!--/catalog__product-list-->
+  </div>
+  <!--/catalog__product-list-->
 
-  <div class="catalg__pagination pagination"> 
+  <div class="catalg__pagination pagination">
     <div class="pagination__list">
-      <a class="pagination__link_left" href="#"></a>
+      <a class="pagination__link pagination__link_disabled" href="#">&#60;</a>
       <a class="pagination__link pagination__link_active" href="#">1</a>
       <a class="pagination__link" href="#">2</a>
       <a class="pagination__link" href="#">3</a>
       <a class="pagination__link" href="#">4</a>
       <a class="pagination__link" href="#">5</a>
-      <a class="pagination__link_right" href="#"></a>
+      <a class="pagination__link" href="#">&#62;</a>
 
     </div>
 
-  </div> <!--/catalog__pagination-->
-</section> <!--/catalog-->
+  </div>
+  <!--/catalog__pagination-->
+</section>
+<!--/catalog-->
 
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
-
