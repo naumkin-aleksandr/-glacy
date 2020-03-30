@@ -3,6 +3,8 @@
 // import bootstrap from "bootstrap";
 
 
+
+// special offfers
 var pageBg = document.querySelector("#wrapper-page"); 
 var specialOffersBtn1 = document.querySelector("#special-offers__btn-1");
 var specialOffersBtn2 = document.querySelector("#special-offers__btn-2");
@@ -55,7 +57,7 @@ specialOffersBtn3.addEventListener("click", function(evt){
     specialOffersBox3.classList.remove("none");
 });
 
-
+// feedback
 let btnFeedback = document.querySelector("#btn-feedback");
 let modalFeedback = document.querySelector("#modal-feedback");
 let closeModalFeedback = document.querySelector("#modal-feedback__close");
@@ -71,4 +73,58 @@ closeModalFeedback.addEventListener("click", function(evt){
     modalFeedback.classList.add("none");
     pageBg.classList.remove("wrapper-page_roily");
 
+});
+
+let basketBtn = document.querySelector("#basket");
+let shoppingCart =document.querySelector("#shopping-cart");
+let shoppingCartClose =document.querySelector("#shopping-cart__close"); 
+
+let loginOpen = document.querySelector("#login__open");
+let loginForm = document.querySelector("#login__form");
+let loginClose = document.querySelector("#login__close"); 
+
+let searchOpen = document.querySelector("#search__open");
+let searchForm = document.querySelector("#search__form");
+let searchClose = document.querySelector("#search__close"); 
+
+// shopping cart 
+basketBtn.addEventListener("click", function(evt){
+    evt.preventDefault();
+    shoppingCart.classList.remove("none");
+    loginForm.classList.add("none");
+    searchForm.classList.add("none");
+
+});
+
+shoppingCartClose.addEventListener("click", function(evt){
+    evt.preventDefault();
+    shoppingCart.classList.add("none");
+})
+
+
+//login 
+loginOpen.addEventListener("click", function(evt){
+    evt.preventDefault();
+    loginForm.classList.remove("none");
+    shoppingCart.classList.add("none");
+    searchForm.classList.add("none");
+});
+
+loginClose.addEventListener("click", function(evt){
+    evt.preventDefault();
+    loginForm.classList.add("none");
+});
+
+
+// search 
+searchOpen.addEventListener("click", function(evt){
+    evt.preventDefault();
+    searchForm.classList.remove("none");
+    shoppingCart.classList.add("none");
+    loginForm.classList.add("none");
+});
+
+searchClose.addEventListener("click", function(evt){
+    evt.preventDefault();
+    searchForm.classList.add("none");
 });

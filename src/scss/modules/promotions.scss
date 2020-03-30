@@ -18,10 +18,13 @@
 
         &_bg-raspberries {
             background: url(../img/bg-raspberries.jpg) no-repeat center;
+            background-size: cover;
         }
 
         &_bg-chocolate {
             background: url(../img/bg-chocolate.jpg) no-repeat center;
+            background-size: cover;
+
         }
     }
 
@@ -35,7 +38,7 @@
     }
 
     &__text {
-        margin-bottom: 44px;
+        margin-bottom: 47px;
         font-family: "Roboto";
         font-weight: 700;
         font-size: 18px;
@@ -48,7 +51,7 @@
         display: inline-block;
         width: 165px;
         font-size: 18px;
-        line-height: 46px;
+        line-height: 44px;
         text-align: center;
 
     }

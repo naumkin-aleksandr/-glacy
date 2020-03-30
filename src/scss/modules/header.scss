@@ -1,5 +1,5 @@
 .header {
-    padding: 0 27px 0 27px;
+    padding: 0 27px;
   
     &__wrapper {
         display: flex;
@@ -152,10 +152,7 @@
                 fill: #000;
             }
         }
-        &:hover +.search__form {
-            visibility: visible;
-            transition: .2s;
-        }
+       
     }
     &__icon {
         width: 18px;
@@ -165,18 +162,13 @@
 
     &__form {
         width: 340px;
-        padding: 20px 15px;
+        padding: 30px 30px 20px 15px;
         border-radius: 5px;
         background-color: #f8f7f4;
         position: absolute;
         top: 40px;
         right: 0;
-        visibility: hidden;
         transition: .8s;
-        &:hover {
-            visibility: visible;
-            transition: .8s;
-        }
     }
 
     &__input {
@@ -195,11 +187,46 @@
             font-size: 14px;
             line-height: 24px;
             color: #999999;
-          }
-         
+        }
     }
 
-        
+    &__close {
+    
+        width: 19px;
+        height: 19px;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+         &:hover::before,
+         &:hover::after {
+            background-color: red;
+        }
+
+        &::before {
+            content: "";
+            width: 3px;
+            height: 25px;
+            background-color: #323232;
+            transform: rotate(45deg);
+            position: absolute;
+            top: -3px;
+            left: 9px;           
+        }
+
+        &::after {
+            content: "";
+            width: 3px;
+            height: 25px;
+            background-color: #323232;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: -3px;
+            left: 9px;
+        }
+    }
 
         
 }
@@ -242,16 +269,24 @@
         margin-right: 8px;
         fill: #fff;
     }
-    &__form {
-        width: 277px;
-        padding: 20px 15px;
-        border-radius: 5px;
-        background-color: #f8f7f4;
+
+    &__wrapper-form {
         position: absolute;
         top: 40px;
         right: 0;
         z-index: 2;
     }
+    &__form {
+        width: 277px;
+        padding: 30px 30px 20px 15px;
+        border-radius: 5px;
+        background-color: #f8f7f4;
+        position: relative;
+
+    }
+
+   
+
     &__input {
         width: 241px;
         height: 44px;
@@ -295,6 +330,50 @@
         line-height: 24px;
         color: #323232;
         text-decoration: underline;
+
+        &:hover {
+            color: #ffbc9e;
+            text-decoration-color: #ffbd9e;
+            transition: .2s;
+        }    
+    }
+
+    &__close {
+    
+        width: 19px;
+        height: 19px;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+         &:hover::before,
+         &:hover::after {
+            background-color: red;
+        }
+
+        &::before {
+            content: "";
+            width: 3px;
+            height: 25px;
+            background-color: #323232;
+            transform: rotate(45deg);
+            position: absolute;
+            top: -3px;
+            left: 9px;           
+        }
+
+        &::after {
+            content: "";
+            width: 3px;
+            height: 25px;
+            background-color: #323232;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: -3px;
+            left: 9px;
+        }
     }
 
 
@@ -302,7 +381,7 @@
 
 .basket {
     position: relative;
-    &__open {
+    &__btn {
         display: inline-block;
         padding: 0 15px 0 15px;
         font-family: "Roboto";
@@ -312,12 +391,22 @@
         color: #fff;
         background-color: rgba(255,255,255, .2);
         border-radius: 15px;
+
+        &_active {
+            color: #323232;
+            background-color: #fff;
+        }
+
     }
     &__icon {
         width: 20px;
         height: 20px;
         margin-right: 8px;
         fill: #fff;
+
+        &_active {
+            fill: #e84d37;
+        }
     }
 }
 
