@@ -1,7 +1,8 @@
 .info {
-    margin-bottom: 40px;
-    padding: 25px 47px 0 47px;
-    background: url(../img/bg-wafer.png) no-repeat center;
+    max-width: 100% ;
+    margin: 0 27px 40px;
+    padding: 25px 20px 0;
+    background: url(../img/bg-wafer.png) repeat center;
     border-radius: 12px;
 
     &__title {
@@ -22,7 +23,7 @@
     }
 
     &__text {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         padding-left: 56px;
         font-family: "Roboto";
         font-weight: 500;

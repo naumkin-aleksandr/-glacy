@@ -1,9 +1,9 @@
 .catalog {
+    padding: 0 27px;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
 
     &__title {
         margin-bottom: 30px;
-        padding: 0 27px 0 27px;
         font-family: "Roboto";
         font-weight: 700;
         font-size: 35px;
@@ -12,9 +12,9 @@
     }
 
     &__product-list {
-        padding: 0 14px 0 14px;
         display: flex;
         flex-flow: wrap;
+        justify-content: space-between;
         margin-bottom: 50px;
     }
 }

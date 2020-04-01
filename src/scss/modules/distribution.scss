@@ -1,21 +1,20 @@
 .distribution {
-    margin-left: auto;
-    padding: 6px;
-    flex-basis: 560px;
+    padding: 5px 5px 5px 6px;
+    width: 560px;
     min-height: 220px;
     border-radius: 12px;
     background: repeating-linear-gradient(135deg, #f8f7f4 1px 8px, #92cdff 9px 16px , #f8f7f4 17px 25px, #fe9e90 26px 35px);
 
     &__wrapper {
+        width: 100%;
         height: 100%;
-        padding: 0 20px;
+        padding: 30px 20px 35px;
         background-color: #f8f7f4;
         border-radius: 8px;
     }
 
     &__text {
-        margin-bottom: 40px;
-        padding-top: 30px;
+        margin-bottom: 32px;
         font-family: "Roboto";
         font-weight: 500;
         font-size: 16px;
@@ -23,9 +22,14 @@
         color: #5a5a5a;
     }
 
+    &__form {
+        display: flex;
+    }
+
     &__input {
-        width: 368px;
-        padding: 0 0 0 15px;
+        width: auto;
+        flex: 1 0 auto;
+        padding-left: 15px;
         border: 1px solid #d3d3d2;
         border-radius: 3px;
         line-height: 42px;
@@ -37,10 +41,11 @@
     }
 
     &__btn {
-        margin-left: 6px;
+        display: block;
+        margin-left: 11px;
         padding: 0;
         width: 129px;
         font-size: 18px;
-         line-height: 44px;
+        line-height: 44px;
     }
 }
