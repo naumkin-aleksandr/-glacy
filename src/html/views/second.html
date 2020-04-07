@@ -24,7 +24,7 @@
     <div class="form-catalog__wrapper">
       <div class="form-catalog__box">
         <p class="form-catalog__title">Сортировка:</p>
-        <div class="form-catalog__bl">
+        <div class="form-catalog__bl ">
           <select class="form-catalog__select" name="form-catalog-select">
             <option value="popularity">по популярности </option>
             <option value="minimum-price">по возрастанию цены</option>
@@ -38,7 +38,7 @@
       <div class="form-catalog__box">
         <p class="form-catalog__title">Цена: 100 руб. - 500 руб.</p>
 
-        <div class="form-catalog__bl">
+        <div class="form-catalog__bl form-catalog__bl_padding">
           <input class="form-catalog__range" type="range" min="0" max="700" value="200">
 
         </div>
@@ -49,18 +49,18 @@
 
       <div class="form-catalog__box">
         <p class="form-catalog__title">Жирность:</p>
-        <div class="form-catalog__bl form-catalog__bl_white">
+        <div class="form-catalog__bl form-catalog__bl_padding">
           <input class="form-catalog__input-radio" id="form-catalog__input-radio-1" type="radio"
-            name="form-catalog-radio">
+            name="form-catalog-radio" value="0">
           <label class="form-catalog__label-radio" for="form-catalog__input-radio-1">0%</label>
           <input class="form-catalog__input-radio" id="form-catalog__input-radio-2" type="radio"
-            name="form-catalog-radio" checked>
+            name="form-catalog-radio" value="10" checked>
           <label class="form-catalog__label-radio" for="form-catalog__input-radio-2">до 10%</label>
           <input class="form-catalog__input-radio" id="form-catalog__input-radio-3" type="radio"
-            name="form-catalog-radio">
+            name="form-catalog-radio" value="30">
           <label class="form-catalog__label-radio" for="form-catalog__input-radio-3">до 30%</label>
           <input class="form-catalog__input-radio" id="form-catalog__input-radio-4" type="radio"
-            name="form-catalog-radio">
+            name="form-catalog-radio" value="more-30">
           <label class="form-catalog__label-radio" for="form-catalog__input-radio-4">выше 30%</label>
 
         </div>
@@ -73,30 +73,32 @@
     <div class="form-catalog__wrapper">
       <div class="form-catalog__box">
         <p class="form-catalog__title"> Наполнители:</p>
-        <div class="form-catalog__bl form-catalog__bl_white">
+        <div class="form-catalog__bl form-catalog__bl_padding">
           <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-1" type="checkbox"
-            name="form-catalog-checkbox" checked>
+            name="form-catalog-checkbox" value="chocolate" checked>
           <label class="form-catalog__label-checkbox" for="form-catalog__input-checkbox-1">шоколадные</label>
+
           <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-2" type="checkbox"
-            name="form-catalog-checkbox" checked>
+            name="form-catalog-checkbox" value="sugar" checked>
           <label class="form-catalog__label-checkbox" for="form-catalog__input-checkbox-2">сахарные присыпки</label>
+
           <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-3" type="checkbox"
-            name="form-catalog-checkbox">
+            name="form-catalog-checkbox" value="fruits">
           <label class="form-catalog__label-checkbox" for="form-catalog__input-checkbox-3">фрукты</label>
+
           <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-4" type="checkbox"
-            name="form-catalog-checkbox">
+            name="form-catalog-checkbox" value="syrup">
           <label class="form-catalog__label-checkbox" for="form-catalog__input-checkbox-4">сиропы</label>
+
           <input class="form-catalog__input-checkbox" id="form-catalog__input-checkbox-5" type="checkbox"
-            name="form-catalog-checkbox">
+            name="form-catalog-checkbox" value="jam">
           <label class="form-catalog__label-checkbox" for="form-catalog__input-checkbox-5">джемы</label>
         </div>
         <!--/form-catalog__bl-->
       </div>
       <!--/form-catalog__box-->
 
-      <!-- <div class="form-catalog__box"> -->
       <button class="form-catalog__btn" type="submit">Применить</button>
-      <!-- </div> /form-catalog__box -->
 
     </div>
     <!--/form-catalog__wrapper-->
